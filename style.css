@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Poppins";
+}
+p, li, a{
+    font-family: "Urbanist", sans-serif;
+    font-size: 1.29rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
+}
+
+html{
+    font-size: 62.5%;
+}
+.container{
+    margin: 0 auto;
+    padding: 7rem 2.4rem;
+    max-width: 110rem;
+    
+}
+.section-navbar{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    height: auto;
+}
+.section-navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.8rem 0;
+    
+}
+.section-navbar .navbar ul{
+    display: flex;
+    gap: 3.2rem;
+    text-transform: capitalize;
+    & li{
+        color: rgb(71, 64, 64);
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        display: inline-block;
+        position: relative;
+        &::after{
+            content: "";
+            position:absolute;
+            width: 0;
+            left:0;
+            bottom:0;         
+            border-bottom: 0.2rem solid blue;
+            transition: all 0.3s linear;
+        }
+    }
+    & li:hover:after{
+        width: 100%;
+    }
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+.grid{
+    display: grid;
+
+}
+.grid-two--cols{
+    grid-template-columns: repeat(2, 1fr);
+}
+.btn{
+    background-color: blue;
+    display: inline-block;
+    padding: 1.2rem 3.2rem;
+    color: white;
+    border-radius: 0.6rem;
+}
+.btn:hover{
+    background-color: rgb(84, 84, 180);
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+main{
+    background-image: linear-gradient(
+        to top right,
+        #3d86fa,
+        #4484fb,
+        #679eff,
+        #b3d2ff,
+        #ebf3fe
+  
+    );
+    position: relative;
+}
+.section-hero--image img{
+    width: 100%;
+    height: auto;
+    transform: scaleX(-1);
+}
+.grid{
+    align-items: center;
+    gap:4.1rem;
+   
+    & .hero-subheading{
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        font-size: 1.45rem;
+        word-spacing: 0.2rem;
+        font-weight: 700;
+        color: rgb(90, 27, 198);
+    }  
+    & .hero-heading{
+        font-size: 4rem;
+        line-height: 1.5;
+        font-family: "Jost", sans-serif;
+        color: rgb(90, 27, 198);
+        font-weight: 900;
+    }
+    & .hero-para{
+        color: white;
+    }
+}
+.custom-shape-divider-bottom-1727710684 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1727710684 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-bottom-1727710684 .shape-fill {
+    fill: #FFFFFF;
+}
+p{
+    margin: 1.2rem 0 2rem 0;
+}
+.section-common--heading{
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.section-common--subheading{
+    color: black;
+}
+.section-about img{
+    padding: 2.4rem;
+    width: 15rem;
+    height: auto;
+    border-radius: 50%;
+    background-color: #ccdbf2;
+    transition: all 0.3s linear;
+}
+.section-about .about-div{
+    text-align: center;
+}
+.section-common--title{
+    font-size: 2rem;
+    margin: 2.4rem 0 1.2rem 0;
+}
+.grid-three--cols{
+    grid-template-columns: repeat(3, 1fr);
+}
+.section-about .grid{
+    gap: 6.4rem;
+}
+.icon img:hover{
+    rotate: 360deg;
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+}
+.section-course .grid{
+     gap: 6.4rem;
+}
+.fa-brands{
+    padding: 2.4rem;
+    background-color: #d1eef9;
+    font-size: 2.0rem;
+    border-radius: 50%;
+    color: #2b37e7;
+}
+.grid-four--cols{
+    grid-template-columns:repeat(4,1fr);
+}
+.section-course .course-div:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.section-course .grid{
+    gap: 3.2rem;
+    
+}
+.section-course .course-div{
+    padding: 3.2rem;
+}
