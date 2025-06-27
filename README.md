@@ -1,2 +1,2 @@
-# To-Do-List
-A fully functional user interactive To-Do list using HTML and CSS
+# Eduhub Website
+A fully functional user interactive Education Website using HTML and CSS
